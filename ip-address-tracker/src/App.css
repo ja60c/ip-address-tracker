@@ -1,0 +1,11 @@
+.container{
+  width: auto;
+  margin: -10em 15em;
+  align-items: center;
+  display: block;
+}
+
+.titulo{
+  color: aliceblue;
+  text-align: center;
+} 

@@ -1,6 +1,12 @@
+import Header from "./components/Header";
+
+import './App.css';
+
 function App() {
   return (
-    <h1>Hola desde mi react app 📍</h1>
+    <>
+    <Header />
+    </>
   );
 }
 
