@@ -1,17 +1,16 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-
+import { IconLocation } from './IconLocation'
 
 function Map(){
     return(
-        <MapContainer style={{height:"100vh"}} center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+        <MapContainer style={{height:"70vh", width:"100vw", zIndex:"-1"}} center={[20.588051, -100.387571]} zoom={13} scrollWheelZoom={false}>
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[51.505, -0.09]}>
+            <Marker position={[20.588051, -100.387571]} zoom={10} scrollWheelZoom={false} icon={IconLocation}>
                 <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                    Aquí estoy
                 </Popup>
             </Marker>
         </MapContainer>    
