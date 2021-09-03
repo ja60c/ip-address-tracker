@@ -1,12 +1,25 @@
 import pattern from '../images/pattern.png';
 import arrow from '../images/icon-arrow.svg';
-import { InputGroup, Button, FormControl, Card } from 'react-bootstrap'
+import { InputGroup, Button, FormControl } from 'react-bootstrap'
 
-import { useEffect, useRef, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 // function Info(){
 //     const [information, setInformation] = useState(null);
 // }
+
+// const Header = ({ handleChange, handleSubmit, typeAddress, typeText }) => {
+//     const [size, setSize] = useState(window.innerWidth);
+  
+//     const handleResize = () => {
+//       setSize(window.innerWidth);
+//     };
+  
+//     useEffect(() => {
+//       window.addEventListener("resize", handleResize);
+  
+//       return window.removeEventListener("resize", handleResize);
+//     }, [])
 
 function Header() {
     return (
@@ -20,7 +33,8 @@ function Header() {
                     placeholder="Search for any IP address or domain"
                     // aria-label="Recipient's username"
                     // aria-describedby="basic-addon2"
-                    />-
+                    // onChange={(e) => handleChange(e)}
+                    />
                     <Button variant="dark" id="button-addon2">
                     <img src={ arrow } alt="bg" />
                     </Button>
