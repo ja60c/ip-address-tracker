@@ -11,7 +11,7 @@ function Map(){
                 <Popup>
                     Aquí estoy
                 </Popup>
-            </Marker>
+            </Marker> 
         </MapContainer>    
     )
 
